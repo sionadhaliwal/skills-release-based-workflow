@@ -350,6 +350,12 @@ Explosion.prototype.step = function (dt) {
   }
 };
 
+var score = 0;
+ctx.fillStyle = "#00FF00";
+ctx.font = "20px Bangers";
+ctx.fillText("Score: " + score, 10, 25);
+
+
 window.addEventListener("load", function () {
   Game.initialize("game", sprites, startGame);
 });
